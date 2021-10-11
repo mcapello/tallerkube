@@ -1,0 +1,2 @@
+Healthcheck
+Comando que sirve para que una app que corre dentro de un container pueda decir si esta saludable o no. Docker en si mismo puede decir que el status es UP pero la app segun lo que haga, puede contener errores de distintos tipos. Este chequeo puede ser una url que exponga la misma app que de por ejemplo devolver un cod 200 se toma como saludable y con un 400 como no saludable. Esto se puede definir en el mismo dockerfile o en el docker run.
