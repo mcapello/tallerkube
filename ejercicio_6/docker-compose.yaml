@@ -1,0 +1,19 @@
+version: "3"
+services:
+
+  nginx:
+    image: nginx:1.21.0
+    volumes:
+        - ./nginx:/etc/nginx
+    ports:
+        - "80:80"
+
+  password-api_1:
+    image: nicopaez/password-api
+    #ports:
+    #    - "3000:3000"
+        
+  password-api_2:
+    image: nicopaez/password-api
+    #ports:
+    #    - "3001:3000"
