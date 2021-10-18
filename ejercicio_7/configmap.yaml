@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pingapp-configmap
+  namespace: curso-tarea
+data:
+  CONFIG_LOCATION: /mydata/config.json
+  DEVELOPER: MArtin.C
