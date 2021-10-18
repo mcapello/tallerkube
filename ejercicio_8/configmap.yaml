@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bot-configmap
+  namespace: curso-tarea
+data:
+  TELEGRAM_TOKEN: A_COMPLETAR
