@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telegrambot-deployment
+  namespace: curso-tarea
+  labels:
+    app: telegrambot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: telegrambot
+  template:
+    metadata:
+      labels:
+        app: telegrambot
+    spec:
+      containers:
+      - name: telegrambot
+        image: nicopaez/telegrambot:0.0.7
+        envFrom:
+          - configMapRef:
+              name: bot-configmap
